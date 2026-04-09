@@ -173,6 +173,7 @@ class _HomePageState extends State<HomePage> {
                             buildField("Tipo", result!.matrizFilial),
                             buildField("Porte", result!.porteEmpresa),
                             buildField("CNAEs", "${result!.cnaePrincipal}, ${result!.cnaesSecundarios.join(", ")}"),
+                            buildField("Capital Social", "R\$${result!.capitalSocial}")
                           ]),
 
                           buildSection("Endereço", [
