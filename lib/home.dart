@@ -172,6 +172,7 @@ class _HomePageState extends State<HomePage> {
                             buildField("Situação", result!.situacaoCadastral),
                             buildField("Tipo", result!.matrizFilial),
                             buildField("Porte", result!.porteEmpresa),
+                            buildField("CNAEs", "${result!.cnaePrincipal}, ${result!.cnaesSecundarios.join(", ")}"),
                           ]),
 
                           buildSection("Endereço", [
